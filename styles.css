@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar */
+.navbar {
+  position: fixed; /* Navbar fixed */
+  top: 0; /* Tetap di bagian atas */
+  left: 0;
+  width: 100%; /* Lebar navbar mengikuti layar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #006400; /* Warna hijau */
+  padding: 1rem 2rem;
+  color: white;
+  z-index: 1000; /* Prioritas di atas elemen lain */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #d3d890;
+}
+
+/* Active Link */
+.nav-links a.active {
+  color: #d3d890; /* Warna berbeda untuk link aktif */
+  font-weight: bold;
+  border-bottom: 2px solid #d3d890; /* Indikator bawah */
+}
+
+  /* About Section */
+  .about-section {
+    padding: 2rem;
+    background-color: #e8f5e9;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #006400;
+  }
+  
+  .about-section p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  .about-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+.about-cards .card ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.about-cards .card ul li {
+  margin-bottom: 0.5rem;
+}
+
+  .card {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 400px;
+    /* text-align: center; */
+  }
+  
+  .product {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .product h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 2rem;
+    background-color: #e0f2f1;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #006400;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #006400;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #004d00;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
